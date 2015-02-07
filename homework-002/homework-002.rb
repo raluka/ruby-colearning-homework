@@ -26,7 +26,8 @@ end
   end
 
   def make_mini_arrays(items)
-    items.map{|element| [element]}
+   # items.map{|element| [element]}
+    items.combination(1).to_a
   end
 
   def remove_if_more_than_three_letters(items)
